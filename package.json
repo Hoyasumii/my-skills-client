@@ -7,10 +7,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hono/node-server": "^1.13.8",
-    "@hono/zod-validator": "^0.4.3",
     "dotenv": "^16.4.7",
-    "hono": "^4.7.4",
     "next": "14.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
