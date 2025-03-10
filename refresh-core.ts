@@ -6,9 +6,11 @@ const actions = [
   `git clone ${coreRepo} core`,
   "rm -rf core/data",
   "rm -rf core/.git",
+  "rm -rf core/.env.example",
   "rm -rf core/pnpm-lock.yaml",
 ];
 
-for await (const action of actions) {
+for (const action of actions) {
   execSync(action);
+  console.log(`[ACTION] ${action}`)
 }
