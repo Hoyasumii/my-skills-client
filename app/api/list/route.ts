@@ -1,6 +1,6 @@
 "use server";
 
-import { makeListPictures } from "@/generators";
+import { makeListPictures } from "~/generators";
 
 export async function GET() {
   const service = makeListPictures();
