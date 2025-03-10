@@ -1,7 +1,7 @@
 "use server";
 
-import { makeGettingPicture } from "@/generators";
-import { GetPictureModel } from "@/models/pictures";
+import { makeGettingPicture } from "./core/src/generators";
+import { GetPictureModel } from "./core/src/models/pictures";
 import { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
