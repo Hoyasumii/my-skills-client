@@ -20,6 +20,9 @@ importers:
       hono:
         specifier: ^4.7.4
         version: 4.7.4
+      include:
+        specifier: link:@img/sharp-libvips-dev/include
+        version: link:@img/sharp-libvips-dev/include
       next:
         specifier: 14.2.5
         version: 14.2.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -32,6 +35,9 @@ importers:
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
+      versions:
+        specifier: link:@img/sharp-wasm32/versions
+        version: link:@img/sharp-wasm32/versions
       zod:
         specifier: ^3.24.2
         version: 3.24.2
