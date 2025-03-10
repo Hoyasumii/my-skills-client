@@ -13,5 +13,10 @@ export async function GET(request: NextRequest) {
 
   const content = GetPictureModel.safeParse(searchParams).data;
 
-  return new Response(await service.run(content!));
+  return new Response(new Uint8Array(await service.run(content!)), {
+    status: 200,
+    headers: {
+      "Content-Type": "image/webp",
+    },
+  });
 }
