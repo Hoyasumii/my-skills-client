@@ -1,4 +1,6 @@
+import { CopyButton } from "@/components/CopyButton";
 import { Button } from "@/components/ui";
+import { Copy } from "lucide-react";
 import Link from "next/link";
 
 export default async function Home({
@@ -26,7 +28,9 @@ export default async function Home({
 					</Link>
 				))}
 			</div>
-			<Button className="absolute bottom-0 right-0">Hello world</Button>
+			{icons && (
+				<CopyButton host={process.env.HOST} icons={icons} />
+			)}
 		</>
 	);
 }
