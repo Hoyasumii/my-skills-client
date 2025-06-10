@@ -15,7 +15,7 @@ export default async function Home({
 			<div className="grid grid-cols-6 gap-4">
 				{allIcons.map((icon, index) => (
 					<Link
-						href={`/?icons=${icons ? `${icons},${icon}` : icon}`}
+						href={`${process.env.HOST}/?icons=${icons ? `${icons},${icon}` : icon}`}
 						key={`img-${index.toString()}`}
 						className="transition-all duration-300 cursor-pointer hover:scale-95 active:scale-90"
 					>
@@ -26,7 +26,7 @@ export default async function Home({
 					</Link>
 				))}
 			</div>
-			<Button>Hello world</Button>
+			<Button className="absolute bottom-0 right-0">Hello world</Button>
 		</>
 	);
 }
